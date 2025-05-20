@@ -36,7 +36,7 @@ function Home() {
         <button className="btn">الذهاب الي صفحة الخدمات</button>
       </div>
     </div>
-  );
+  )
 }
 
 export default Home;
