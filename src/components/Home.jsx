@@ -1,6 +1,9 @@
 // src/components/Home.jsx
 import React, { useState } from "react";
 import './Home.css';
+import { Link } from 'react-router-dom';
+import Services from './Services.jsx';
+
 
 function Home() {
   const [navVisible, setNavVisible] = useState(false);
@@ -23,8 +26,7 @@ function Home() {
         <nav className={`nav ${navVisible ? "active" : ""}`}>
           <a href="#">logo</a>
           <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">AboutUs</a>
+          <a href="/services">Services</a>          <a href="#">AboutUs</a>
           <a href="#">Contact</a>
           <a href="#">Our Business</a>
         </nav>
